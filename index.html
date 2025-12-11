@@ -1,0 +1,231 @@
+﻿<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="utf-8" />
+    <title>מטלת אמצע - תכנות 3</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="styles/bootstrap.rtl.min.css" rel="stylesheet" />
+    <link href="styles/style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">TED TALK לילדים</a>
+
+            <button class="navbar-toggler" type="button" id="navbarToggle" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#hero">בית</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">מיומנויות</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#practice">תרגול</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">צור קשר</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="hero" class="hero-section d-flex align-items-center">
+        <div class="container text-center">
+            <h1 class="hero-title">TED TALK לילדים – מדברים בביטחון!</h1>
+            <p class="hero-subtitle">
+                לומדים איך להציג רעיון בצורה מרתקת וברורה – בדיוק כמו דוברים אמיתיים על הבמה.
+            </p>
+            <a href="#skills" class="btn btn-warning btn-lg mt-3">מתחילים</a>
+        </div>
+    </header>
+
+    <main class="py-5">
+        <div class="container">
+            <section id="search-area" class="mb-4">
+                <h2 class="mb-3">חיפוש מיומנות</h2>
+                <div class="row g-2">
+                    <div class="col-md-6 col-12">
+                        <input type="text" id="searchInput" class="form-control" placeholder="חפש מיומנות...">
+                    </div>
+                    <div class="col-md-2 col-12">
+                        <button id="searchBtn" class="btn btn-dark w-100">חפש</button>
+                    </div>
+                    <div class="col-12">
+                        <small id="searchMessage" class="text-muted"></small>
+                    </div>
+                </div>
+            </section>
+
+            <section id="skills">
+                <h2 class="mb-4">מיומנויות מרכזיות לדיבור מול קהל</h2>
+
+                <div id="skillsGrid" class="row g-4">
+                    <div class="col-12 col-md-6 col-lg-4 skill-card-wrapper" data-skill-title="בחירת נושא">
+                        <div class="card h-100">
+                            <img src="images/subject.jpg" class="card-img-top" alt="בחירת נושא">
+                            <div class="card-body">
+                                <h3 class="card-title fs-5">בחירת נושא</h3>
+                                <p class="card-text">
+                                    איך לבחור רעיון שמדבר אליכם באמת ושבא לכם לשתף עם הכיתה.
+                                </p>
+                                <button class="btn unit-btn btn-sm">למד/י עוד</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4 skill-card-wrapper" data-skill-title="בניית מבנה הרצאה">
+                        <div class="card h-100">
+                            <img src="images/lectureLevels.jpg" class="card-img-top" alt="בניית מבנה הרצאה">
+                            <div class="card-body">
+                                <h3 class="card-title fs-5">בניית מבנה הרצאה</h3>
+                                <p class="card-text">
+                                    פתיחה שמושכת תשומת לב, גוף ברור וסיום שנשאר בראש של הקהל.
+                                </p>
+                                <button class="btn unit-btn btn-sm">למד/י עוד</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4 skill-card-wrapper" data-skill-title="סטוריטלינג לילדים">
+                        <div class="card h-100">
+                            <img src="images/idea.jpg" class="card-img-top" alt="סטוריטלינג לילדים">
+                            <div class="card-body">
+                                <h3 class="card-title fs-5">סטוריטלינג לילדים</h3>
+                                <p class="card-text">
+                                    איך להפוך רעיון לסיפור מרתק שילדים אחרים מתחברים אליו.
+                                </p>
+                                <button class="btn unit-btn btn-sm">למד/י עוד</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4 skill-card-wrapper" data-skill-title="דיבור בביטחון">
+                        <div class="card h-100">
+                            <img src="images/confidentTalk.jpg" class="card-img-top" alt="דיבור בביטחון">
+                            <div class="card-body">
+                                <h3 class="card-title fs-5">דיבור בביטחון</h3>
+                                <p class="card-text">
+                                    טיפים לעמידה יציבה, נשימה נכונה וקשר עין עם הקהל.
+                                </p>
+                                <button class="btn unit-btn btn-sm">למד/י עוד</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4 skill-card-wrapper" data-skill-title="שימוש בעזרים">
+                        <div class="card h-100">
+                            <img src="images/objects.jpg" class="card-img-top" alt="שימוש בעזרים">
+                            <div class="card-body">
+                                <h3 class="card-title fs-5">שימוש בעזרים</h3>
+                                <p class="card-text">
+                                    איך להשתמש במצגת, תמונות או חפצים כך שיחזקו את המסר ולא יבלבלו.
+                                </p>
+                                <button class="btn unit-btn btn-sm">למד/י עוד</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4 skill-card-wrapper" data-skill-title="תרגול אפקטיבי">
+                        <div class="card h-100">
+                            <img src="images/friendsTalk.jpg" class="card-img-top" alt="תרגול אפקטיבי">
+                            <div class="card-body">
+                                <h3 class="card-title fs-5">תרגול אפקטיבי</h3>
+                                <p class="card-text">
+                                    דרכים להתאמן לבד או עם חברים ולהפוך כל חזרה ליותר טובה מהקודמת.
+                                </p>
+                                <button class="btn unit-btn btn-sm">למד/י עוד</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4 skill-card-wrapper" data-skill-title="הרגע הגדול">
+                        <div class="card h-100">
+                            <img src="images/final.jpg" class="card-img-top" alt="הרגע הגדול">
+                            <div class="card-body">
+                                <h3 class="card-title fs-5">הרגע הגדול</h3>
+                                <p class="card-text">
+                                    איך להתמודד עם התרגשות ולדבר בביטחון כשכולם מסתכלים עליך.
+                                </p>
+                                <button class="btn unit-btn btn-sm">למד/י עוד</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="practice" class="mt-5">
+                <h2 class="mb-3">תרגול קצר – איך אתה מרגיש עם דיבור מול קהל?</h2>
+
+                <form id="feedbackForm" class="row g-3">
+                    <div class="col-md-4">
+                        <label class="form-label">
+                            עד כמה אתה מרגיש בנוח לדבר מול הכיתה? (1–5)
+                        </label>
+                        <div id="comfortRatingGroup" class="rating-group">
+                            <button type="button" class="rating-option" data-value="1">1</button>
+                            <button type="button" class="rating-option" data-value="2">2</button>
+                            <button type="button" class="rating-option" data-value="3">3</button>
+                            <button type="button" class="rating-option" data-value="4">4</button>
+                            <button type="button" class="rating-option" data-value="5">5</button>
+                        </div>
+                        <input type="number" min="1" max="5" id="comfortLevel" class="d-none">
+                    </div>
+
+                    <div class="col-md-4">
+                        <label class="form-label">
+                            עד כמה הכלים באתר יעזרו לך? (1–5)
+                        </label>
+                        <div id="helpfulnessRatingGroup" class="rating-group">
+                            <button type="button" class="rating-option" data-value="1">1</button>
+                            <button type="button" class="rating-option" data-value="2">2</button>
+                            <button type="button" class="rating-option" data-value="3">3</button>
+                            <button type="button" class="rating-option" data-value="4">4</button>
+                            <button type="button" class="rating-option" data-value="5">5</button>
+                        </div>
+                        <input type="number" min="1" max="5" id="helpfulness" class="d-none">
+                    </div>
+
+                    <div class="col-12">
+                        <label for="takeaway" class="form-label">
+                            מה הדבר הכי חשוב שלקחת מהתכנית?
+                        </label>
+                        <textarea id="takeaway" class="form-control" rows="3"></textarea>
+                    </div>
+
+                    <div class="col-12">
+                        <button type="button" id="sendToLMSBtn" class="btn btn-warning">
+                            שלח תשובות
+                        </button>
+                        <small id="feedbackMessage" class="ms-2"></small>
+                    </div>
+                </form>
+            </section>
+
+            <section id="contact" class="mt-5">
+                <h2 class="mb-3">צור קשר</h2>
+                <p class="mb-1">מורה/ה או תלמיד/ה שרוצים לשתף אותנו בחוויית ה-TED שלכם?</p>
+                <p class="mb-0">ניתן לשלוח מייל לדוגמה: <strong>teacher@example.com</strong></p>
+            </section>
+        </div>
+    </main>
+
+    <footer class="mt-5 py-3 bg-dark text-light text-center">
+        <small>© תוכנית TED TALK לילדים – מטלת אמצע, קורס תכנות 3</small>
+    </footer>
+
+    <script src="jScripts/bootstrap.bundle.min.js"></script>
+    <script src="jScripts/scorm.js"></script>
+    <script src="jScripts/main.js"></script>
+</body>
+</html>
